@@ -17,11 +17,17 @@ class Solution {
                 }
             }
         }
+        System.out.println("grid" + Arrays.deepToString(grid));
         int level =0;
         while(!q.isEmpty()){
             level++;
+            System.out.println("level: "+level);
+           
             int size= q.size();
             while(size-->0){
+                System.out.println("size: "+size);
+                System.out.println("Queue: " + Arrays.deepToString(q.toArray()));
+               
                 int[] currentCell = q.poll();
                 for(int [] dir: dirs){
                     int row = currentCell[0]+ dir[0];

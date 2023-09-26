@@ -7,6 +7,7 @@ class Solution{
         for(int i =0; i<size; i++){
             maxHeap.add(arr[i]);
             if(maxHeap.size()>k){
+                System.out.println(maxHeap);
                 maxHeap.poll();
             }
         }
